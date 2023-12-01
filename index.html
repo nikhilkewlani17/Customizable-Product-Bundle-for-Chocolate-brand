@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Chocolate Purchasing</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Chocolate Purchasing</div>
+      <p><b>*To adjust the quantities, use the arrows in the input </b></p>
+      <div class="products">
+        <div class="product" data-name="Ferrero Rocher" data-price="120">
+          <img
+            src="./Chocolate1.jpg"
+            alt="Ferrero Rocher"
+          />
+          <h3>Ferrero Rocher</h3>
+          <p>₹120</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Amedei Porcelana" data-price="145">
+          <img
+            src="./Chocolate2.jpg"
+            alt="Amedei Porcelana"
+          />
+          <h3>Amedei Porcelana</h3>
+          <p>₹145</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Chocopologie" data-price="170">
+          <img
+            src="./Chocolate3.jpg"
+            alt="Chocopologie"
+          />
+          <h3>Chocopologie</h3>
+          <p>₹170</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Fruit Chocolate" data-price="200">
+          <img
+            src="https://www.agoudalife.com/wp-content/uploads/choc-berry-8.jpg"
+            alt="Fruit Chocolate"
+          />
+          <h3>Fruit Chocolate</h3>
+          <p>₹200</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="summary">
+        <h2>Your Custom Pack</h2>
+        <ul id="summary-items">
+        </ul>
+        <p id="summary-total">Total: ₹0</p>
+        <button id="summary-button" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
